@@ -21,4 +21,10 @@ class Migration(migrations.Migration):
                 to=settings.AUTH_USER_MODEL,
             ),
         ),
+                migrations.AddField(
+            model_name="tasklist",
+            name="creation_date",
+            field=models.DateTimeField(auto_now_add=True),
+        ),
     ]
+
