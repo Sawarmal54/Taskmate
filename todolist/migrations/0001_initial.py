@@ -23,7 +23,6 @@ class Migration(migrations.Migration):
                 ),
                 ("task", models.CharField(max_length=300)),
                 ("done", models.BooleanField(default=False)),
-                ("creation_date",models.DateTimeField(auto_now_add=True))
             ],
         ),
     ]
