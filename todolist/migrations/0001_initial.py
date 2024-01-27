@@ -25,4 +25,9 @@ class Migration(migrations.Migration):
                 ("done", models.BooleanField(default=False)),
             ],
         ),
+        migrations.AddField(
+            model_name="tasklist",
+            name="creation_date",
+            field=models.DateTimeField(auto_now_add=True),
+        ),
     ]
