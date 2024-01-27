@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% load static %} {% block title %}
+
+<title>Welcome To TaskMate</title>
+{% endblock %} {% block content %}
+
+  <div class="main">
+    <div class="col_main">
+      <img src="{% static "images/stickynotes.jpg" %}" alt="Notes">
+    </div>
+    <div class="col_main">
+      <img src="{% static "images/stickynotes-1.jpg" %}" alt="Notes">
+    </div>
+    <div class="col_main">
+      <img src="{% static "images/stickynotes-2.jpg" %}" alt="Notes">
+    </div>
+  </div>
+  <div class="main">
+    <div class="col-md-12 "> 
+    <p>This the home page for my Todo list app</p>
+    <p>This the home page for my Todo list app</p>
+    <br/>
+    <a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3">Let's Get Started</button></a>
+    </div>
+  </div>
+{% endblock %}
