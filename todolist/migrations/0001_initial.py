@@ -23,11 +23,7 @@ class Migration(migrations.Migration):
                 ),
                 ("task", models.CharField(max_length=300)),
                 ("done", models.BooleanField(default=False)),
+                ("creation_date",models.DateTimeField(auto_now_add=True))
             ],
-        ),
-        migrations.AddField(
-            model_name="tasklist",
-            name="creation_date",
-            field=models.DateTimeField(auto_now_add=True),
         ),
     ]
